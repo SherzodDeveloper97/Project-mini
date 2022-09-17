@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+body{
+    background-color: #fff;
+    font-family: 'Noto Sans';
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    /* border: 1px solid red; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.context_menu{
+    text-align: right;
+}
+.click{
+    color: grey;
+    display: none;
+}
+.context_menu_content{
+    /* display: flex !important; */
+    /* justify-content: right !important; */
+}
+.content_block{
+    background-color:#fff;
+    width: 140px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #D8F7F7;
+    /* transform:translateX(-14px); */
+}
+.context_menu_content p{
+    padding:10px;
+}
+.active{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+}
+.left,.contact,.right h5,.header_content{
+    display: flex;
+    align-items: center;
+}
+.left_info h3,.right h5,.accaunt_info p,.information p,.contact p{
+    text-transform: capitalize;
+}
+.left_info h3{
+    font-size: 34px;
+    font-weight: bold;
+}
+.check_circle{
+    margin-left: 8px;
+}
+.check_circle a{
+    color: #000;
+    font-size: 34px;
+}
+.right h5{
+    font-size: 17px;
+    text-align: center;
+}
+.right h5 br{
+    display: none;
+}
+.right h5 span{
+    color: grey;
+    /* padding-left: 5px; */
+    text-transform:lowercase;
+}
+.right h5 .fa-location-arrow{
+    cursor: pointer;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+    font-size: 17px;
+}
+main{
+    padding-top: 50px;
+}
+.main_block{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+}
+.block_left{
+    text-align: center;
+    margin-right: 200px;
+}
+.accaunt_block{
+    display:flex;
+    justify-content: center;
+}
+.accaunt{
+    width: 190px;
+    height: auto;
+    cursor: pointer;
+}
+.accaunt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.accaunt_info{
+    padding: 5px 100px 5px 100px;
+    background-color: #A0A2B1;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 38px;
+    cursor: pointer;
+    
+}
+.accaunt_info .triangle{
+    border-bottom: 25px solid #A0A2B1;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    width: 0;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.accaunt_info p{
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+}
+.block_right{
+    text-align: center;
+}
+.title{
+    display: flex;
+    justify-content:center;
+}
+.title h4{
+    margin-bottom: 28px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.title h4,.information h6{
+    text-transform: uppercase;
+}
+.social_block{
+    display: flex;
+    /* transform: translateX(23px); */
+}
+.social_left{
+    margin-right: 80px;
+}
+.social_left,.social_right{
+    text-align: center;
+}
+.social_left a{
+    transform: translateX(20px);
+}
+.social_left a,.social_right a{
+    display: flex;
+    justify-content: center;
+    color:#000;
+    font-size: 44px;
+}
+.social_right a{
+    transform: translateX(16px);
+}
+.information{
+    margin-top: 30px;
+}
+.information h6{
+    font-weight: bold;
+    font-size: 19px;
+}
+footer{
+    padding-top: 80px;
+}
+.my_contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.my_contact .contact{
+    background:#1E76E0;
+    margin-right: 28px;
+    padding: 10px 15px 10px 15px;
+    border-radius:6px;
+    cursor: pointer;
+}
+.my_contact .contact:last-child{
+    margin-right: 0;
+}
+.contact a,.submit a{
+    font-size: 22px;
+    margin-right: 5px;
+}
+.contact a,.contact p,.submit p{
+    color: #fff;
+}
+.contact p,.submit p{
+    font-size: 20px;
+}
+.my_contact .contact:nth-child(3) a{
+    /* transform:rotateX(5deg); */
+    /* transform:rotateY(10deg); */
+}
+.submit_block{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.submit{
+    display: flex;
+    /* align-items: center; */
+    justify-content:center;
+    background:#1E76E0;
+    width: 400px;
+    padding: 10px 100px 10px 100px;
+    border-radius:6px;
+    cursor: pointer;
+}
+.submit a{
+    font-size: 19px;
+}
+.submit a .fa-address-card{
+    color: #fff;
+}
+.submit p{
+    text-transform: capitalize;
+}
