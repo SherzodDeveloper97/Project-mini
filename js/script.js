@@ -15,18 +15,22 @@ sunBtn.addEventListener("click", lightMode);
 function darkMode() {
   body.className = "dark";
   body.classList.add("dark-color");
-  sunBtn.className =
-    sunBtn.className == "bx bxs-sun" ? "bx bx-sun" : "bx bxs-sun";
-  moonBtn.className =
-    moonBtn.className == "bx bx-moon" ? "bx bxs-moon" : "bx bx-moon";
+  if (sunBtn.className == "bx bxs-sun") {
+    sunBtn.className = "bx bx-sun";
+  }
+  if (moonBtn.className == "bx bx-moon") {
+    moonBtn.className = "bx bxs-moon";
+  }
   figure.classList.add("active");
 }
 
 function lightMode() {
   body.className = "light";
-  sunBtn.className =
-    sunBtn.className == "bx bx-sun" ? "bx bxs-sun" : "bx bx-sun";
-  moonBtn.className =
-    moonBtn.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
+  if (sunBtn.className == "bx bx-sun") {
+    sunBtn.className = "bx bxs-sun";
+  }
+  if (moonBtn.className == "bx bxs-moon") {
+    moonBtn.className = "bx bx-moon";
+  }
   figure.classList.remove("active");
 }

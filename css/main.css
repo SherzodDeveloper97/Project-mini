@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -252,17 +251,33 @@ main {
 .author__abilities {
   margin-bottom: 35px;
 }
-.author__skills,
+.author__skills {
+  display: flex;
+  align-items: flex-start;
+  max-width: 380px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.skills__name,
 .author__money {
   font-size: 18px;
   font-weight: 700;
   color: var(--color);
 }
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills__items,
 .author__item {
+  word-break: break-all;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Changa", sans-serif;
   color: var(--color);
+  font-weight: 500;
+}
+.author__item {
+  word-break: unset;
 }
 .block_right h4 {
   color: var(--color);

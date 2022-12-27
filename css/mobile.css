@@ -105,7 +105,18 @@
   .block_right {
     margin-top: 35px;
   }
-  .contact_block {
+  .social_block {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    transform: translateX(-24px);
+    -webkit-transform: translateX(-24px);
+    -moz-transform: translateX(-24px);
+    -ms-transform: translateX(-24px);
+    -o-transform: translateX(-24px);
+  }
+  .social_left {
+    margin-right: 0;
   }
   .my_contact {
     justify-content: space-evenly;
