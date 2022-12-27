@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -247,6 +248,21 @@ main {
 }
 .block_right {
   text-align: center;
+}
+.author__abilities {
+  margin-bottom: 35px;
+}
+.author__skills,
+.author__money {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color);
+}
+.author__item {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Changa", sans-serif;
+  color: var(--color);
 }
 .block_right h4 {
   color: var(--color);
